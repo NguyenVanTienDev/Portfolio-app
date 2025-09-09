@@ -1,24 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio App
+
+Một project Next.js được khởi tạo với các công nghệ hiện đại:
+
+- **Next.js 15.5.2** - React framework với App Router
+- **TypeScript** - Type safety
+- **Tailwind CSS v4** - Utility-first CSS framework
+- **shadcn/ui** - Component library với New York style
+- **Yarn** - Package manager
+
+## Cấu trúc Project
+
+```
+src/
+├── app/                 # App Router (Next.js 13+)
+│   ├── globals.css     # Global styles với Tailwind
+│   ├── layout.tsx      # Root layout
+│   └── page.tsx        # Home page
+├── components/         # React components
+│   ├── ui/            # shadcn/ui components
+│   └── layout/        # Layout components
+├── hooks/             # Custom React hooks
+├── lib/               # Utility functions
+│   └── utils.ts       # shadcn/ui utilities
+├── types/             # TypeScript type definitions
+└── constants/         # App constants
+```
 
 ## Getting Started
 
-First, run the development server:
+Cài đặt dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Chạy development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Mở [http://localhost:3000](http://localhost:3000) để xem kết quả.
+
+## Thêm shadcn/ui Components
+
+```bash
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+```
 
 ## Learn More
 
